@@ -8,15 +8,18 @@
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "sourceMap": true,
-        "outDir": "dist",
-        "rootDir": "src",
+        "outDir": "./dist",
+        "rootDir": "./src",
         "baseUrl": ".",
         "paths": {
             "*": [
-                "node_modules/*",
-                "src/*",
-                "tests/*",
+                "./src/*",
             ]
-        }
+        },
     },
+    "exclude" : [
+        "tests/**/*.*",
+        "dest/**/*.*",
+        "node_modules/**/*.*"
+    ]
   }
